@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAURICE TECHERA - PERSONAL WEBSITE</title>
+    <meta name="description" content="personal website of MAURICE TECHERA- A student at Rift valley institute of Business studies ,pursuing a Diploma in information and communication technology.">
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta property="og.title" content="MAURICE TECHERA - PERSONAL WEBSITE" />
+    <meta property="og: description" content="personal website" />
+    <meta property="og: type" content="website" />
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav" aria-label="primary">
+                <div class="brand"><span class="dot". aria- hidden="true"></span><span>Maurice techera</span></div>
+                <div class="menu" role="menubar">
+                    <a href="#home" role="menuitem">Home</a>
+                    <a href="#about" role="menuitem">About</a>
+                    <a href="#contact" role="menuitem">Contact</a>
+
+                </div>
+                <button class="menu-btn" id="menuBtn" arial-expanded="false" arial-controls="mobileNav">Menu</button>
+
+                </div>
+            </nav>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main id="home" class="container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div>
+                <p class="kicker">Hi, i'm Maurice Techera</p>
+                <h1 id="hero-title">I build simple, fast website and share what i learn.</h1>
+                <p class="tagline">Based im Nakuru city, I enjoy turning ideas into clean interfaces.Below is a bit about me and a way to contact me.</p>
+                <div class="cta-row">
+                    <a class="btn" href="#contact">Contact Me</a>
+                    <a class="btn secondary" href="#about">Learn More</a>
+                </div>
+                <div class="cta-row" style="gap: .6rem; font-size: .95rem; color:  var(--muted);">
+                    <span>Find me on</span>
+                    <a href="https://github.com/teche123-clone" target="_blank" rel="noopener">Github</a>
+
+                    <a href="https://www.linkdin.com/in/maurice" target="_blank" rel="noopener">LinkedIn</a>
+
+                    <a href="https://x.com/@mauriceTec71692" rel="noopener">X</a>
+                </div>
+            </div>
+            <div class="portrait">
+                <img src="C:\Users\KONZA-VDI\Desktop\website\IMG_20250720_154544_937.webp" alt="cover image" />
+            </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+            <div class="card">
+                <p>I'm maurice techera an ict student at Rift valley institute of Business Studies. I focus on building neat, accessible website with sematic HTML,Modern css.</p>
+                <p>Currently,I'm learning<strong>IT support</strong>and working on<strong>Building website</strong>.When im not coding, i enjoy <strong>Searching about a new trends based on a new technology</strong>.</p>
+
+            </div>
+            <div class="card">
+                <h3 style="margin-top: 0">Highlights</h3>
+                <div class="about-grid">
+                    <div class="about-item"><strong>SKILLS</strong><br/>HTML,CSS,PYTHON,R</div>
+                    <div class="about-item"><strong>TOOLS</strong><br/>Vs code,Github</div>
+                    <div class="about-item"><strong>INTERESTS</strong>/>UI,UX</div>
+                    <div class="about-item"><strong>lOCATION</strong><br>Nakuru,kenya</div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">contact</h2>
+            <div class="card">
+                <p style="margin-top: 0">Want to work together or say hi? Send me a message:</p>
+                <div class="success" id="successMsg" role="status" aria-live="polite">Thanks! Your message was send successfully.</div>
+                <div class="error" id="errorMsg" role="alert">Hmm, something went wrong. Please try again or email me <a href="mailto:techeramaurice@gmail.com">techermaurice6@gmail.com"></a>.</div>
+                <form id="contactForm" action="https://formspree.io/f/mzzvvIzv" method="post">
+                    <div class="field">
+                        <label for="name">Maurice techera</label>
+                        <input id="name" name="name" type="text" placeholder="jane Doe" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text" required />
+
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="write your message........" required></textarea>
+
+                    </div>
+                    <button class="btn" type="submit">send message</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container" style="padding: o;">
+                ©️ <span id="year"></span>maurice techera. All rights reserved.
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
